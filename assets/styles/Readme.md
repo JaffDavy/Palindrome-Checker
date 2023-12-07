@@ -14,4 +14,3 @@ To open the page you need your computer and you must be connected to the interne
 **Jaff Davy-Arnold**
 - GitHub: [JaffDavy](https://github.com)
 - X: [@jaff_arnold](https://twitter.com)
- 
