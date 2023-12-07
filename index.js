@@ -22,4 +22,4 @@ function checkPalindrome () {
     E.innerHTML = 'Sorry, it is not palindrome'
   }
 }
-checkPalindrome ()
+checkPalindrome()
