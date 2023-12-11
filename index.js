@@ -1,5 +1,5 @@
 // check for input string
-function palindromeTest(str) {
+function palindromeTest (str) {
   const strArr = str.split(' ').join('')
   let s = strArr.length - 1
   for (let i = 0; i < s / 2; i++) {
@@ -11,12 +11,12 @@ function palindromeTest(str) {
   return true
 }
 
-function checkPalindrome() {
+function checkPalindrome () {
   // get the values from html
   const pali = document.getElementById('text-area').value
   // console.log(pali)
-  let isPalindrome = palindromeTest(pali)
-  let E = document.getElementById('result')
+  const isPalindrome = palindromeTest(pali)
+  const E = document.getElementById('result')
   // console.log(E)
   // if condition to check if it's palindrome
   if (isPalindrome) {
