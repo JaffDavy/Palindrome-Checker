@@ -1,8 +1,9 @@
 // check for input string
-function palindromeTest (str) {
-  let s = str.length - 1
-  for (let i = 0; i < str.length / 2; i++) {
-    if (str[i] !== str[s]) {
+function palindromeTest(str) {
+  const strArr = str.split(' ').join('')
+  let s = strArr.length - 1
+  for (let i = 0; i < s / 2; i++) {
+    if (strArr[i] !== strArr[s]) {
       return false
     }
     s--
@@ -10,11 +11,13 @@ function palindromeTest (str) {
   return true
 }
 
-function checkPalindrome () {
+function checkPalindrome() {
   // get the values from html
   const pali = document.getElementById('text-area').value
-  const isPalindrome = palindromeTest(pali)
-  const E = document.getElementById('result')
+  // console.log(pali)
+  let isPalindrome = palindromeTest(pali)
+  let E = document.getElementById('result')
+  // console.log(E)
   // if condition to check if it's palindrome
   if (isPalindrome) {
     E.innerHTML = 'Correct, It is a  palindrome'
@@ -22,4 +25,6 @@ function checkPalindrome () {
     E.innerHTML = 'Sorry, it is not palindrome'
   }
 }
-checkPalindrome()
+if (onclick) {
+  checkPalindrome()
+}
